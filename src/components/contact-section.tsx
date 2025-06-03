@@ -24,11 +24,11 @@ export default function ContactSection() {
             
             <div className="space-y-4">
               <a href="mailto:yogeshbawankar03@gmail.com" className="flex items-center space-x-3 group text-lg hover:text-primary transition-colors">
-                <Mail className="w-6 h-6 text-primary group-hover:animate-pulse" />
+                <Mail className="w-6 h-6 text-black group-hover:animate-pulse" />
                 <span>yogeshbawankar03@gmail.com</span>
               </a>
               <a href="tel:+917057846078" className="flex items-center space-x-3 group text-lg hover:text-primary transition-colors">
-                <Phone className="w-6 h-6 text-primary group-hover:animate-pulse" />
+                <Phone className="w-6 h-6 text-black group-hover:animate-pulse" />
                 <span>(+91) 70578 46078</span>
               </a>
             </div>
@@ -36,12 +36,12 @@ export default function ContactSection() {
             <div className="flex space-x-4 pt-4">
               <Button asChild variant="outline" size="icon" className="hover:bg-primary hover:text-primary-foreground transition-colors" suppressHydrationWarning>
                 <Link href="https://www.linkedin.com/in/yogesh-bawankar-392760232/" target="_blank" aria-label="LinkedIn">
-                  <Linkedin className="w-5 h-5" />
+                  <Linkedin className="w-5 h-5 text-black" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="icon" className="hover:bg-primary hover:text-primary-foreground transition-colors" suppressHydrationWarning>
                 <Link href="https://github.com/yogeshbawankar" target="_blank" aria-label="GitHub">
-                  <Github className="w-5 h-5" />
+                  <Github className="w-5 h-5 text-black" />
                 </Link>
               </Button>
             </div>
