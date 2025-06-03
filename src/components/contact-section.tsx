@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -33,12 +34,12 @@ export default function ContactSection() {
             </div>
 
             <div className="flex space-x-4 pt-4">
-              <Button asChild variant="outline" size="icon" className="hover:bg-primary hover:text-primary-foreground transition-colors">
+              <Button asChild variant="outline" size="icon" className="hover:bg-primary hover:text-primary-foreground transition-colors" suppressHydrationWarning>
                 <Link href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
                   <Linkedin className="w-5 h-5" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="icon" className="hover:bg-primary hover:text-primary-foreground transition-colors">
+              <Button asChild variant="outline" size="icon" className="hover:bg-primary hover:text-primary-foreground transition-colors" suppressHydrationWarning>
                 <Link href="https://github.com/yourprofile" target="_blank" aria-label="GitHub">
                   <Github className="w-5 h-5" />
                 </Link>
@@ -55,17 +56,17 @@ export default function ContactSection() {
               <form className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-1">Full Name</label>
-                  <Input type="text" id="name" name="name" placeholder="John Doe" required className="focus:ring-primary focus:border-primary"/>
+                  <Input type="text" id="name" name="name" placeholder="John Doe" required className="focus:ring-primary focus:border-primary" suppressHydrationWarning/>
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium mb-1">Email Address</label>
-                  <Input type="email" id="email" name="email" placeholder="you@example.com" required  className="focus:ring-primary focus:border-primary"/>
+                  <Input type="email" id="email" name="email" placeholder="you@example.com" required  className="focus:ring-primary focus:border-primary" suppressHydrationWarning/>
                 </div>
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium mb-1">Message</label>
-                  <Textarea id="message" name="message" rows={4} placeholder="Your message..." required className="focus:ring-primary focus:border-primary"/>
+                  <Textarea id="message" name="message" rows={4} placeholder="Your message..." required className="focus:ring-primary focus:border-primary" suppressHydrationWarning/>
                 </div>
-                <Button type="submit" className="w-full bg-primary hover:bg-purple-700 transition-colors">
+                <Button type="submit" className="w-full bg-primary hover:bg-purple-700 transition-colors" suppressHydrationWarning>
                   Send Message <Send className="ml-2 w-4 h-4" />
                 </Button>
               </form>
