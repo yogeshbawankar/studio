@@ -1,7 +1,8 @@
 
 import HeroSection from '@/components/hero-section';
 import AboutSection from '@/components/about-section';
-import SkillsSection from '@/components/skills-section'; // Re-added SkillsSection
+import SkillsSection from '@/components/skills-section';
+import FeedbackSection from '@/components/feedback-section'; // Added FeedbackSection back
 import ContactSection from '@/components/contact-section';
 import SiteHeader from '@/components/site-header';
 import SiteFooter from '@/components/site-footer';
@@ -13,7 +14,8 @@ export default function Home() {
       <main className="flex-grow">
         <HeroSection />
         <AboutSection />
-        <SkillsSection /> {/* Added SkillsSection back */}
+        <SkillsSection />
+        <FeedbackSection /> {/* Added FeedbackSection back */}
         <ContactSection />
       </main>
       <SiteFooter />

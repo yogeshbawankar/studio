@@ -13,7 +13,7 @@ export default function AboutSection() {
             <Card className="w-full max-w-sm shadow-xl transform hover:scale-105 transition-transform duration-300">
               <CardContent className="p-0">
                 <Image
-                  src="https://placehold.co/400x400.png"
+                  src="/yogesh-bawankar-profile.jpg"
                   alt="Yogesh Bawankar - Professional Portrait"
                   width={400}
                   height={400}
