@@ -14,7 +14,7 @@ export default function AboutSection() {
               <CardContent className="p-0">
                 <Image
                   src="https://placehold.co/400x400.png"
-                  alt="Your Name - Professional Portrait"
+                  alt="Yogesh Bawankar - Professional Portrait"
                   width={400}
                   height={400}
                   className="rounded-lg object-cover"
@@ -25,13 +25,13 @@ export default function AboutSection() {
           </div>
           <div className="md:col-span-2">
             <p className="text-lg mb-6 leading-relaxed">
-              Hello! I'm a passionate and detail-oriented professional with a strong background in [Your Main Field, e.g., web development and UI/UX design]. I thrive on solving complex problems and creating elegant, efficient solutions that delight users. My journey in tech began with a fascination for how digital experiences can shape interactions and convey information.
+              I’m driven by a deep interest in how language models retrieve, reason, and adapt in real world settings. My focus lies in Retrieval Augmented Generation (RAG), scalable evaluation techniques, and efficient fine-tuning of large models. These interests evolved during my internship at Bytecube (France), where I built a RAG pipeline and evaluated models like LLaMA 3.1, Claude 3 Sonnet, and Mistral for factuality and retrieval performance.
             </p>
             <p className="text-lg mb-6 leading-relaxed">
-              Over the years, I've honed my skills in [Mention 2-3 key skills/technologies, e.g., React, Next.js, and Figma], working on diverse projects ranging from small business websites to large-scale enterprise applications. I believe in continuous learning and staying updated with the latest industry trends to deliver cutting-edge results.
+              I also automated metadata workflows using AWS Lambda and explored trade-offs in vision-based systems using YOLOv11 and multi-frame inference, learning how to align model accuracy with real time performance constraints. I value experimental rigor, reproducibility, and thoughtful design seeing every project as an opportunity to learn deeper patterns behind machine learning behavior.
             </p>
             <p className="text-lg leading-relaxed">
-              When I'm not coding or designing, I enjoy [Mention a hobby or interest, e.g., exploring new hiking trails, reading sci-fi novels, or experimenting with photography]. I'm always excited to connect with like-minded individuals and explore new opportunities.
+              I’m currently seeking research opportunities focused on efficient LLMs, retrieval systems, or model alignment where I can contribute to innovation that’s both scalable and scientifically grounded.
             </p>
           </div>
         </div>

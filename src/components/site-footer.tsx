@@ -12,7 +12,7 @@ export default function SiteFooter() {
   return (
     <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-border bg-muted">
       <div className="container mx-auto text-center text-muted-foreground">
-        <p>&copy; {currentYear} Your Name Here. All rights reserved.</p>
+        <p>&copy; {currentYear} Yogesh Bawankar. All rights reserved.</p>
         <p className="text-sm mt-2">Designed with Elegance</p>
       </div>
     </footer>

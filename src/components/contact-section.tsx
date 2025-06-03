@@ -23,24 +23,24 @@ export default function ContactSection() {
             </div>
             
             <div className="space-y-4">
-              <a href="mailto:your.email@example.com" className="flex items-center space-x-3 group text-lg hover:text-primary transition-colors">
+              <a href="mailto:yogeshbawankar03@gmail.com" className="flex items-center space-x-3 group text-lg hover:text-primary transition-colors">
                 <Mail className="w-6 h-6 text-primary group-hover:animate-pulse" />
-                <span>your.email@example.com</span>
+                <span>yogeshbawankar03@gmail.com</span>
               </a>
-              <a href="tel:+1234567890" className="flex items-center space-x-3 group text-lg hover:text-primary transition-colors">
+              <a href="tel:+917057846078" className="flex items-center space-x-3 group text-lg hover:text-primary transition-colors">
                 <Phone className="w-6 h-6 text-primary group-hover:animate-pulse" />
-                <span>+1 (234) 567-890</span>
+                <span>(+91) 70578 46078</span>
               </a>
             </div>
 
             <div className="flex space-x-4 pt-4">
               <Button asChild variant="outline" size="icon" className="hover:bg-primary hover:text-primary-foreground transition-colors" suppressHydrationWarning>
-                <Link href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+                <Link href="https://www.linkedin.com/in/yogesh-bawankar-392760232/" target="_blank" aria-label="LinkedIn">
                   <Linkedin className="w-5 h-5" />
                 </Link>
               </Button>
               <Button asChild variant="outline" size="icon" className="hover:bg-primary hover:text-primary-foreground transition-colors" suppressHydrationWarning>
-                <Link href="https://github.com/yourprofile" target="_blank" aria-label="GitHub">
+                <Link href="https://github.com/yogeshbawankar" target="_blank" aria-label="GitHub">
                   <Github className="w-5 h-5" />
                 </Link>
               </Button>
@@ -66,7 +66,7 @@ export default function ContactSection() {
                   <label htmlFor="message" className="block text-sm font-medium mb-1">Message</label>
                   <Textarea id="message" name="message" rows={4} placeholder="Your message..." required className="focus:ring-primary focus:border-primary" suppressHydrationWarning/>
                 </div>
-                <Button type="submit" className="w-full bg-primary hover:bg-purple-700 transition-colors" suppressHydrationWarning>
+                <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground transition-colors" suppressHydrationWarning>
                   Send Message <Send className="ml-2 w-4 h-4" />
                 </Button>
               </form>

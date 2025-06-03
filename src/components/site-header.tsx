@@ -26,7 +26,7 @@ export default function SiteHeader() {
             />
           </svg>
           <span className="font-headline text-2xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
-            Elegant Portfolio
+            Yogesh Bawankar Portfolio
           </span>
         </Link>
         {/* Optional: Navigation links could be added here */}
