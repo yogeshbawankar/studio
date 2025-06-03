@@ -1,16 +1,9 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code2, Brain, Wand2 } from "lucide-react"; // Removed Lightbulb as Tech Consulting is removed
+import { Code2, Brain, Wand2 } from "lucide-react";
 
 const skillsData = [
-  {
-    category: "Development",
-    icon: <Code2 className="h-10 w-10 mb-4 text-primary" />,
-    title: "Web Development",
-    description: "Building responsive and performant websites using modern technologies like React, Next.js, and Node.js.",
-    tags: ["React", "Next.js", "TypeScript", "Node.js", "TailwindCSS"]
-  },
   {
     category: "AI/ML",
     icon: <Brain className="h-10 w-10 mb-4 text-primary" />,
@@ -25,13 +18,13 @@ const skillsData = [
     description: "Leveraging and integrating various AI tools and platforms to build advanced solutions and automate workflows.",
     tags: ["ChatGPT", "GitHub Copilot", "Beautiful.ai", "Elicit", "Zapier AI"]
   },
-  // {
-  //   category: "Consulting",
-  //   icon: <Lightbulb className="h-10 w-10 mb-4 text-primary" />,
-  //   title: "Tech Consulting",
-  //   description: "Providing expert advice and strategies to help businesses leverage AI and web technology for growth and efficiency.",
-  //   tags: ["AI Strategy", "Scalability", "Model Evaluation", "Workflow Automation"]
-  // },
+  {
+    category: "Development",
+    icon: <Code2 className="h-10 w-10 mb-4 text-primary" />,
+    title: "Web Development",
+    description: "Building responsive and performant websites using modern technologies like React, Next.js, and Node.js.",
+    tags: ["React", "Next.js", "TypeScript", "Node.js", "TailwindCSS"]
+  },
 ];
 
 export default function SkillsSection() {
