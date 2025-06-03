@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code2, Brain, Wand2, Lightbulb } from "lucide-react"; // Updated icons
+import { Code2, Brain, Wand2 } from "lucide-react"; // Removed Lightbulb as Tech Consulting is removed
 
 const skillsData = [
   {
@@ -22,16 +22,16 @@ const skillsData = [
     category: "AI Tools",
     icon: <Wand2 className="h-10 w-10 mb-4 text-primary" />,
     title: "AI Tool Expert",
-    description: "Leveraging and integrating various AI tools, frameworks, and platforms (like Genkit, LangChain) to build advanced solutions.",
-    tags: ["Genkit", "LangChain", "Hugging Face", "OpenAI API", "Vertex AI"]
+    description: "Leveraging and integrating various AI tools and platforms to build advanced solutions and automate workflows.",
+    tags: ["ChatGPT", "GitHub Copilot", "Beautiful.ai", "Elicit", "Zapier AI"]
   },
-  {
-    category: "Consulting",
-    icon: <Lightbulb className="h-10 w-10 mb-4 text-primary" />,
-    title: "Tech Consulting",
-    description: "Providing expert advice and strategies to help businesses leverage AI and web technology for growth and efficiency.",
-    tags: ["AI Strategy", "Scalability", "Model Evaluation", "Workflow Automation"]
-  },
+  // {
+  //   category: "Consulting",
+  //   icon: <Lightbulb className="h-10 w-10 mb-4 text-primary" />,
+  //   title: "Tech Consulting",
+  //   description: "Providing expert advice and strategies to help businesses leverage AI and web technology for growth and efficiency.",
+  //   tags: ["AI Strategy", "Scalability", "Model Evaluation", "Workflow Automation"]
+  // },
 ];
 
 export default function SkillsSection() {
@@ -41,7 +41,7 @@ export default function SkillsSection() {
         <h2 className="font-headline text-3xl md:text-4xl font-bold text-center mb-16 text-primary">
           Skills & Expertise
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8"> {/* Adjusted grid for potentially 3 items */}
           {skillsData.map((skill, index) => (
             <Card key={index} className="bg-background text-foreground shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
               <CardHeader className="items-center text-center">
