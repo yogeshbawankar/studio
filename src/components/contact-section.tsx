@@ -6,6 +6,24 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, Linkedin, Github, Send } from "lucide-react";
 import Link from "next/link";
 
+// Simple Kaggle SVG icon
+const KaggleIcon = () => (
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="text-black"
+  >
+    <path d="M14.303 3.98H9.697L6 9.038l3.697 4.96h4.606l6.006-4.96-2.303-5.058z" />
+    <path d="M9.697 14.962l-3.697 5.058h4.606l3.697-5.058H9.697z" />
+  </svg>
+);
+
 export default function ContactSection() {
   return (
     <section id="contact" className="py-16 md:py-24 bg-muted text-muted-foreground">
@@ -42,6 +60,11 @@ export default function ContactSection() {
               <Button asChild variant="outline" size="icon" className="hover:bg-primary hover:text-primary-foreground transition-colors" suppressHydrationWarning>
                 <Link href="https://github.com/yogeshbawankar" target="_blank" aria-label="GitHub">
                   <Github className="w-5 h-5 text-black" />
+                </Link>
+              </Button>
+              <Button asChild variant="outline" size="icon" className="hover:bg-primary hover:text-primary-foreground transition-colors" suppressHydrationWarning>
+                <Link href="https://www.kaggle.com/yogeshbawankar" target="_blank" aria-label="Kaggle">
+                  <KaggleIcon />
                 </Link>
               </Button>
             </div>
