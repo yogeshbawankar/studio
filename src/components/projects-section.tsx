@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button"; 
+import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
 
 const projectsData = [
@@ -13,16 +13,16 @@ const projectsData = [
     image: "https://placehold.co/600x400.png",
     aiHint: "ai pipeline",
     tags: ["Python", "RAG", "LLM Evaluation", "NLP"],
-    githubLink: "https://github.com/yogeshbawankar/project-rag", 
+    githubLink: "https://github.com/yogeshbawankar/project-rag",
     liveLink: null,
   },
   {
-    title: "Automated Metadata Workflow",
+    title: "Hybrid traffic detection system using yolo",
     description: "Engineered an automated metadata workflow solution using AWS Lambda, significantly improving data processing efficiency for vision-based systems.",
     image: "https://placehold.co/600x400.png",
     aiHint: "cloud automation",
     tags: ["AWS Lambda", "Python", "Automation", "Computer Vision"],
-    githubLink: "https://github.com/yogeshbawankar/metadata-automation", 
+    githubLink: "https://github.com/yogeshbawankar/metadata-automation",
     liveLink: null,
   },
   {
@@ -31,7 +31,7 @@ const projectsData = [
     image: "https://placehold.co/600x400.png",
     aiHint: "computer vision analysis",
     tags: ["YOLOv11", "Computer Vision", "Performance Optimization", "Python"],
-    githubLink: "https://github.com/yogeshbawankar/vision-analysis", 
+    githubLink: "https://github.com/yogeshbawankar/vision-analysis",
     liveLink: null,
   },
   {
@@ -40,8 +40,8 @@ const projectsData = [
     image: "https://placehold.co/600x400.png",
     aiHint: "web development portfolio",
     tags: ["Next.js", "React", "TailwindCSS", "ShadCN UI"],
-    githubLink: "https://github.com/yogeshbawankar/portfolio", 
-    liveLink: "#", 
+    githubLink: "https://github.com/yogeshbawankar/portfolio",
+    liveLink: "#",
   },
 ];
 
