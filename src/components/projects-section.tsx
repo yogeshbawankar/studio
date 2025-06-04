@@ -10,7 +10,7 @@ const projectsData = [
   {
     title: "AI-Powered RAG Pipeline",
     description: "Developed a Retrieval Augmented Generation pipeline at Bytecube (France) to enhance language model factuality and retrieval performance. Evaluated models like LLaMA 3.1, Claude 3 Sonnet, and Mistral.",
-    image: "/ai-project-image.png", // Changed from placeholder
+    image: "/ai-project-image.png",
     aiHint: "ai pipeline",
     tags: ["Python", "RAG", "LLM Evaluation", "NLP"],
     githubLink: "https://github.com/yogeshbawankar/project-rag",
@@ -37,7 +37,7 @@ const projectsData = [
   {
     title: "Portfolio Website",
     description: "This very portfolio website, built with Next.js, React, Tailwind CSS, and ShadCN UI components to showcase my skills and projects.",
-    image: "https://placehold.co/600x400.png",
+    image: "/portfolio-image.png",
     aiHint: "web development portfolio",
     tags: ["Next.js", "React", "TailwindCSS", "ShadCN UI"],
     githubLink: "https://github.com/yogeshbawankar/portfolio",
@@ -89,7 +89,7 @@ export default function ProjectsSection() {
                     </Link>
                   )}
                   {project.liveLink && (
-                     <Link href={project.liveLink} target="_blank" rel="noopener noreferrer" aria-label={`Live demo of ${project.title}`}>
+                     <Link href={project.liveLink} target={project.liveLink === "#" ? "_self" : "_blank"} rel="noopener noreferrer" aria-label={`Live demo of ${project.title}`}>
                       <Button variant="outline" size="icon" className="hover:bg-primary hover:text-primary-foreground transition-colors" suppressHydrationWarning>
                         <ExternalLink className="w-5 h-5" />
                       </Button>
