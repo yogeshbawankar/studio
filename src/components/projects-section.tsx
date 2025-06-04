@@ -18,11 +18,11 @@ const projectsData = [
   },
   {
     title: "Hybrid Traffic Safety System",
-    description: "Engineered a real-time Hybrid Traffic Safety System utilizing YOLO for object detection and AWS Lambda for efficient backend processing. This system enhances road safety by identifying potential hazards and automating alerts, demonstrating skills in computer vision and cloud automation.",
+    description: "Engineered a real-time Hybrid Traffic Safety System utilizing YOLO for object detection and Streamlit for an interactive user interface. This system enhances road safety by identifying potential hazards and automating alerts, demonstrating skills in computer vision and application development.",
     image: "https://placehold.co/600x400.png",
-    aiHint: "traffic safety",
-    tags: ["AWS Lambda", "Python", "YOLO", "Computer Vision", "Automation"],
-    githubLink: "https://github.com/yogeshbawankar/metadata-automation", // Kept existing link, can be updated if needed
+    aiHint: "traffic safety yolo",
+    tags: ["Streamlit", "Python", "YOLO", "Computer Vision", "Automation"],
+    githubLink: "https://github.com/yogeshbawankar/metadata-automation",
     liveLink: null,
   },
   {
