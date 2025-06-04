@@ -10,7 +10,7 @@ const projectsData = [
   {
     title: "AI-Powered RAG Pipeline",
     description: "Developed a Retrieval Augmented Generation pipeline at Bytecube (France) to enhance language model factuality and retrieval performance. Evaluated models like LLaMA 3.1, Claude 3 Sonnet, and Mistral.",
-    image: "https://placehold.co/600x400.png",
+    image: "/ai-project-image.png", // Changed from placeholder
     aiHint: "ai pipeline",
     tags: ["Python", "RAG", "LLM Evaluation", "NLP"],
     githubLink: "https://github.com/yogeshbawankar/project-rag",
@@ -31,7 +31,7 @@ const projectsData = [
     image: "https://placehold.co/600x400.png",
     aiHint: "nlp analysis",
     tags: ["NLTK", "TextBlob", "VADER", "spaCy", "Hugging Face Transformers", "Python"],
-    githubLink: "https://github.com/yogeshbawankar/vision-analysis", // Assuming this link might need an update later for a sentiment analysis project
+    githubLink: "https://github.com/yogeshbawankar/vision-analysis",
     liveLink: null,
   },
   {
