@@ -27,11 +27,11 @@ const projectsData = [
   },
   {
     title: "Sentiment Analysis",
-    description: "Explored trade-offs in vision-based systems using YOLOv11 and multi-frame inference, focusing on aligning model accuracy with real-time performance constraints.",
+    description: "Developed and evaluated various sentiment analysis models using popular NLP libraries to classify text data. This project involved preprocessing textual data, applying different algorithms (lexicon-based and machine learning-based), and comparing their performance on a benchmark dataset for understanding public opinion or customer feedback.",
     image: "https://placehold.co/600x400.png",
-    aiHint: "computer vision analysis",
-    tags: ["YOLOv11", "Computer Vision", "Performance Optimization", "Python"],
-    githubLink: "https://github.com/yogeshbawankar/vision-analysis",
+    aiHint: "nlp analysis",
+    tags: ["NLTK", "TextBlob", "VADER", "spaCy", "Hugging Face Transformers", "Python"],
+    githubLink: "https://github.com/yogeshbawankar/vision-analysis", // Assuming this link might need an update later for a sentiment analysis project
     liveLink: null,
   },
   {
