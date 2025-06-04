@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button"; // Import the ShadCN Button
+import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
 
 const projectsData = [
@@ -22,7 +22,7 @@ const projectsData = [
     image: "/hybrid-traffic-safety-system.png",
     aiHint: "traffic safety yolo",
     tags: ["Streamlit", "Python", "YOLO", "Computer Vision", "Automation"],
-    githubLink: "https://github.com/yogeshbawankar/metadata-automation", // This might need an update if it's not the correct repo
+    githubLink: "https://github.com/yogeshbawankar/metadata-automation",
     liveLink: null,
   },
   {
@@ -31,7 +31,7 @@ const projectsData = [
     image: "/sentiment-analysis.png",
     aiHint: "nlp analysis",
     tags: ["NLTK", "TextBlob", "VADER", "spaCy", "Hugging Face Transformers", "Python"],
-    githubLink: "https://github.com/yogeshbawankar/vision-analysis", // This might need an update
+    githubLink: "https://github.com/yogeshbawankar/vision-analysis",
     liveLink: null,
   },
   {
@@ -41,7 +41,7 @@ const projectsData = [
     aiHint: "web development portfolio",
     tags: ["Next.js", "React", "TailwindCSS", "ShadCN UI"],
     githubLink: "https://github.com/yogeshbawankar/portfolio",
-    liveLink: "#", // Links to the current page
+    liveLink: "#",
   },
 ];
 
@@ -83,8 +83,8 @@ export default function ProjectsSection() {
                 <div className="flex space-x-3">
                   {project.githubLink && (
                     <Link href={project.githubLink} target="_blank" rel="noopener noreferrer" aria-label={`GitHub repository for ${project.title}`}>
-                      <Button variant="outline" size="icon" className="hover:bg-primary hover:text-primary-foreground transition-colors" suppressHydrationWarning>
-                        <Github className="w-5 h-5" />
+                      <Button variant="outline" className="hover:bg-primary hover:text-primary-foreground transition-colors text-xs px-3 py-1 h-auto" suppressHydrationWarning>
+                        {project.githubLink}
                       </Button>
                     </Link>
                   )}
