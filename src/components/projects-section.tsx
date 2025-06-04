@@ -26,7 +26,7 @@ const projectsData = [
     liveLink: null,
   },
   {
-    title: "Vision System Performance Analysis",
+    title: "Sentiment Analysis",
     description: "Explored trade-offs in vision-based systems using YOLOv11 and multi-frame inference, focusing on aligning model accuracy with real-time performance constraints.",
     image: "https://placehold.co/600x400.png",
     aiHint: "computer vision analysis",
