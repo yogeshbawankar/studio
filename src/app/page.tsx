@@ -2,11 +2,10 @@
 import HeroSection from '@/components/hero-section';
 import AboutSection from '@/components/about-section';
 import SkillsSection from '@/components/skills-section';
-// import ProjectsSection from '@/components/projects-section'; // Removed import
+import ProjectsSection from '@/components/projects-section'; // Changed from FeedbackSection
 import SiteHeader from '@/components/site-header';
 import SiteFooter from '@/components/site-footer';
-import ContactSection from '@/components/contact-section'; // Assuming you want to keep this based on previous interactions
-import FeedbackSection from '@/components/feedback-section'; // Re-added as per previous step, can be removed if not needed
+import ContactSection from '@/components/contact-section';
 
 export default function Home() {
   return (
@@ -16,9 +15,8 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <SkillsSection />
-        <FeedbackSection /> {/* Re-added as per previous step, can be removed if not needed */}
-        {/* <ProjectsSection /> Removed usage */}
-        <ContactSection /> {/* Assuming you want to keep this */}
+        <ProjectsSection /> {/* Changed from FeedbackSection */}
+        <ContactSection />
       </main>
       <SiteFooter />
     </div>
