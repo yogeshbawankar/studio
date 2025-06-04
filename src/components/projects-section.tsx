@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button"; // Ensured ShadCN Button is imported
+import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
 
 const projectsData = [
@@ -13,7 +13,7 @@ const projectsData = [
     image: "/ai-project-image.png",
     aiHint: "ai pipeline",
     tags: ["Python", "RAG", "LLM Evaluation", "NLP"],
-    githubLink: "https://github.com/yogeshbawankar/project-rag",
+    githubLink: "https://github.com/yogeshbawankar",
     liveLink: null,
   },
   {
@@ -22,7 +22,7 @@ const projectsData = [
     image: "/hybrid-traffic-safety-system.png",
     aiHint: "traffic safety yolo",
     tags: ["Streamlit", "Python", "YOLO", "Computer Vision", "Automation"],
-    githubLink: "https://github.com/yogeshbawankar/metadata-automation",
+    githubLink: "https://github.com/yogeshbawankar",
     liveLink: null,
   },
   {
@@ -31,7 +31,7 @@ const projectsData = [
     image: "/sentiment-analysis.png",
     aiHint: "nlp analysis",
     tags: ["NLTK", "TextBlob", "VADER", "spaCy", "Hugging Face Transformers", "Python"],
-    githubLink: "https://github.com/yogeshbawankar/vision-analysis",
+    githubLink: "https://github.com/yogeshbawankar",
     liveLink: null,
   },
   {
@@ -40,7 +40,7 @@ const projectsData = [
     image: "/portfolio-image.png",
     aiHint: "web development portfolio",
     tags: ["Next.js", "React", "TailwindCSS", "ShadCN UI"],
-    githubLink: "https://github.com/yogeshbawankar/portfolio",
+    githubLink: "https://github.com/yogeshbawankar",
     liveLink: "#",
   },
 ];
@@ -84,7 +84,7 @@ export default function ProjectsSection() {
                   {project.githubLink && (
                     <Link href={project.githubLink} target="_blank" rel="noopener noreferrer" aria-label={`GitHub repository for ${project.title}`}>
                       <Button variant="outline" className="hover:bg-primary hover:text-primary-foreground transition-colors text-xs px-3 py-1 h-auto" suppressHydrationWarning>
-                        <Github className="h-3.5 w-3.5" /> 
+                        <Github className="h-3.5 w-3.5 mr-1" /> 
                         {project.githubLink}
                       </Button>
                     </Link>
