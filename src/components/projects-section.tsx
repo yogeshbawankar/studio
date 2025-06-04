@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button"; // Added import for ShadCN Button
 import { Github, ExternalLink } from "lucide-react";
 
 const projectsData = [
@@ -82,14 +83,14 @@ export default function ProjectsSection() {
                 <div className="flex space-x-3">
                   {project.githubLink && (
                     <Link href={project.githubLink} target="_blank" rel="noopener noreferrer" aria-label={`GitHub repository for ${project.title}`}>
-                      <Button variant="outline" size="icon" className="hover:bg-primary hover:text-primary-foreground transition-colors">
+                      <Button variant="outline" size="icon" className="hover:bg-primary hover:text-primary-foreground transition-colors" suppressHydrationWarning>
                         <Github className="w-5 h-5" />
                       </Button>
                     </Link>
                   )}
                   {project.liveLink && (
                      <Link href={project.liveLink} target="_blank" rel="noopener noreferrer" aria-label={`Live demo of ${project.title}`}>
-                      <Button variant="outline" size="icon" className="hover:bg-primary hover:text-primary-foreground transition-colors">
+                      <Button variant="outline" size="icon" className="hover:bg-primary hover:text-primary-foreground transition-colors" suppressHydrationWarning>
                         <ExternalLink className="w-5 h-5" />
                       </Button>
                     </Link>
@@ -104,18 +105,4 @@ export default function ProjectsSection() {
   );
 }
 
-// Helper component for Button, if not already in your ui/button.tsx
-// Assuming Button is imported from "@/components/ui/button"
-// If not, make sure you have a Button component or adjust accordingly.
-// For example:
-const Button = ({ variant, size, className, children, ...props }: React.ButtonHTMLAttributes<HTMLButtonElement> & { variant?: string, size?: string, className?: string, children: React.ReactNode }) => {
-  // Basic button styling, adapt to your project's Button component or ShadCN
-  const baseStyle = "inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50";
-  const variantStyle = variant === "outline" ? "border border-input bg-transparent shadow-sm hover:bg-accent hover:text-accent-foreground" : "bg-primary text-primary-foreground shadow hover:bg-primary/90";
-  const sizeStyle = size === "icon" ? "h-9 w-9" : "h-9 px-4 py-2";
-  return (
-    <button className={`${baseStyle} ${variantStyle} ${sizeStyle} ${className || ''}`} {...props}>
-      {children}
-    </button>
-  );
-};
+// Removed local/custom Button component definition that was here
