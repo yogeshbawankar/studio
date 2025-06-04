@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"; // Ensure ShadCN Button is imported
 import { Github, ExternalLink } from "lucide-react";
 
 const projectsData = [
@@ -83,9 +83,8 @@ export default function ProjectsSection() {
                 <div className="flex space-x-3">
                   {project.githubLink && (
                     <Link href={project.githubLink} target="_blank" rel="noopener noreferrer" aria-label={`GitHub repository for ${project.title}`}>
-                      <Button variant="outline" className="hover:bg-primary hover:text-primary-foreground transition-colors text-xs px-3 py-1 h-auto" suppressHydrationWarning>
-                        <Github className="h-3.5 w-3.5 mr-1" /> 
-                        {project.githubLink}
+                      <Button variant="outline" size="icon" className="hover:bg-primary hover:text-primary-foreground transition-colors" suppressHydrationWarning>
+                        <Github className="w-5 h-5" /> 
                       </Button>
                     </Link>
                   )}
