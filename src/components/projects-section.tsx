@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button"; // Added import for ShadCN Button
+import { Button } from "@/components/ui/button"; 
 import { Github, ExternalLink } from "lucide-react";
 
 const projectsData = [
@@ -13,7 +13,7 @@ const projectsData = [
     image: "https://placehold.co/600x400.png",
     aiHint: "ai pipeline",
     tags: ["Python", "RAG", "LLM Evaluation", "NLP"],
-    githubLink: "https://github.com/yogeshbawankar/project-rag", // Example link
+    githubLink: "https://github.com/yogeshbawankar/project-rag", 
     liveLink: null,
   },
   {
@@ -22,7 +22,7 @@ const projectsData = [
     image: "https://placehold.co/600x400.png",
     aiHint: "cloud automation",
     tags: ["AWS Lambda", "Python", "Automation", "Computer Vision"],
-    githubLink: "https://github.com/yogeshbawankar/metadata-automation", // Example link
+    githubLink: "https://github.com/yogeshbawankar/metadata-automation", 
     liveLink: null,
   },
   {
@@ -31,7 +31,7 @@ const projectsData = [
     image: "https://placehold.co/600x400.png",
     aiHint: "computer vision analysis",
     tags: ["YOLOv11", "Computer Vision", "Performance Optimization", "Python"],
-    githubLink: "https://github.com/yogeshbawankar/vision-analysis", // Example link
+    githubLink: "https://github.com/yogeshbawankar/vision-analysis", 
     liveLink: null,
   },
   {
@@ -40,8 +40,8 @@ const projectsData = [
     image: "https://placehold.co/600x400.png",
     aiHint: "web development portfolio",
     tags: ["Next.js", "React", "TailwindCSS", "ShadCN UI"],
-    githubLink: "https://github.com/yogeshbawankar/portfolio", // Example link
-    liveLink: "#", // Current site
+    githubLink: "https://github.com/yogeshbawankar/portfolio", 
+    liveLink: "#", 
   },
 ];
 
@@ -68,7 +68,7 @@ export default function ProjectsSection() {
                 <CardTitle className="font-headline text-2xl text-primary">{project.title}</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
-                <p className="text-muted-foreground mb-4 leading-relaxed">
+                <p className="text-muted-foreground mb-4 leading-relaxed text-justify">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -104,5 +104,3 @@ export default function ProjectsSection() {
     </section>
   );
 }
-
-// Removed local/custom Button component definition that was here

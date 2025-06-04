@@ -42,7 +42,7 @@ export default function SkillsSection() {
                 <CardTitle className="font-headline text-2xl text-primary">{skill.title}</CardTitle>
               </CardHeader>
               <CardContent className="text-center">
-                <p className="text-muted-foreground mb-4">{skill.description}</p>
+                <p className="text-muted-foreground mb-4 text-justify">{skill.description}</p>
                 <div className="flex flex-wrap justify-center gap-2">
                   {skill.tags.map(tag => (
                     <Badge key={tag} variant="outline" className="border-primary text-primary">{tag}</Badge>

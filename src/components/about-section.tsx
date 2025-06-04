@@ -24,13 +24,13 @@ export default function AboutSection() {
             </Card>
           </div>
           <div className="md:col-span-2">
-            <p className="text-lg mb-6 leading-relaxed">
+            <p className="text-lg mb-6 leading-relaxed text-justify">
               I’m driven by a deep interest in how language models retrieve, reason, and adapt in real world settings. My focus lies in Retrieval Augmented Generation (RAG), scalable evaluation techniques, and efficient fine-tuning of large models. These interests evolved during my internship at Bytecube (France), where I built a RAG pipeline and evaluated models like LLaMA 3.1, Claude 3 Sonnet, and Mistral for factuality and retrieval performance.
             </p>
-            <p className="text-lg mb-6 leading-relaxed">
+            <p className="text-lg mb-6 leading-relaxed text-justify">
               I also automated metadata workflows using AWS Lambda and explored trade-offs in vision-based systems using YOLOv11 and multi-frame inference, learning how to align model accuracy with real time performance constraints. I value experimental rigor, reproducibility, and thoughtful design seeing every project as an opportunity to learn deeper patterns behind machine learning behavior.
             </p>
-            <p className="text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed text-justify">
               I’m currently seeking research opportunities focused on efficient LLMs, retrieval systems, or model alignment where I can contribute to innovation that’s both scalable and scientifically grounded.
             </p>
           </div>

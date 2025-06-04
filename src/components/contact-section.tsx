@@ -35,7 +35,7 @@ export default function ContactSection() {
           <div className="space-y-8">
             <div>
               <h3 className="font-headline text-2xl font-semibold text-primary mb-4">Let's Connect</h3>
-              <p className="text-lg leading-relaxed">
+              <p className="text-lg leading-relaxed text-justify">
                 I'm always excited to discuss new projects, creative ideas, or opportunities to be part of something amazing. Feel free to reach out!
               </p>
             </div>

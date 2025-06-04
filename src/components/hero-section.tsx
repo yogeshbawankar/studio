@@ -12,7 +12,7 @@ export default function HeroSection() {
         <p className="font-headline text-2xl md:text-3xl text-white mb-10">
           Artificial Intelligence Enthusiast
         </p>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto mb-12">
+        <p className="text-lg md:text-xl max-w-2xl mx-auto mb-12 text-justify">
           Welcome to my portfolio. I develop AI powered systems that learn, adapt, and solve real world problems. Let's innovate with intelligence.
         </p>
         <div className="space-x-4">
