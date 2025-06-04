@@ -10,7 +10,7 @@ const projectsData = [
   {
     title: "AI-Powered RAG Pipeline",
     description: "Developed a Retrieval Augmented Generation pipeline at Bytecube (France) to enhance language model factuality and retrieval performance. Evaluated models like LLaMA 3.1, Claude 3 Sonnet, and Mistral.",
-    image: "/ai-project-image.png", // Updated image
+    image: "/ai-project-image.png",
     aiHint: "ai pipeline",
     tags: ["Python", "RAG", "LLM Evaluation", "NLP"],
     githubLink: "https://github.com/yogeshbawankar/project-rag",
@@ -19,7 +19,7 @@ const projectsData = [
   {
     title: "Hybrid Traffic Safety System",
     description: "Engineered a real-time Hybrid Traffic Safety System utilizing YOLO for object detection and Streamlit for an interactive user interface. This system enhances road safety by identifying potential hazards and automating alerts, demonstrating skills in computer vision and application development.",
-    image: "/hybrid-traffic-safety-system.png", // Updated image
+    image: "/hybrid-traffic-safety-system.png",
     aiHint: "traffic safety yolo",
     tags: ["Streamlit", "Python", "YOLO", "Computer Vision", "Automation"],
     githubLink: "https://github.com/yogeshbawankar/metadata-automation", // This might need an update if it's not the correct repo
@@ -28,7 +28,7 @@ const projectsData = [
   {
     title: "Sentiment Analysis",
     description: "Developed and evaluated various sentiment analysis models using popular NLP libraries to classify text data. This project involved preprocessing textual data, applying different algorithms (lexicon-based and machine learning-based), and comparing their performance on a benchmark dataset for understanding public opinion or customer feedback.",
-    image: "https://placehold.co/600x400.png",
+    image: "/sentiment-analysis.png",
     aiHint: "nlp analysis",
     tags: ["NLTK", "TextBlob", "VADER", "spaCy", "Hugging Face Transformers", "Python"],
     githubLink: "https://github.com/yogeshbawankar/vision-analysis", // This might need an update
@@ -37,7 +37,7 @@ const projectsData = [
   {
     title: "Portfolio Website",
     description: "This very portfolio website, built with Next.js, React, Tailwind CSS, and ShadCN UI components to showcase my skills and projects.",
-    image: "/portfolio-image.png", // Updated image
+    image: "/portfolio-image.png",
     aiHint: "web development portfolio",
     tags: ["Next.js", "React", "TailwindCSS", "ShadCN UI"],
     githubLink: "https://github.com/yogeshbawankar/portfolio",
