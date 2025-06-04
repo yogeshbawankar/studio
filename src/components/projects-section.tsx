@@ -3,14 +3,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"; // Import the ShadCN Button
 import { Github, ExternalLink } from "lucide-react";
 
 const projectsData = [
   {
     title: "AI-Powered RAG Pipeline",
     description: "Developed a Retrieval Augmented Generation pipeline at Bytecube (France) to enhance language model factuality and retrieval performance. Evaluated models like LLaMA 3.1, Claude 3 Sonnet, and Mistral.",
-    image: "/ai-project-image.png",
+    image: "/ai-project-image.png", // Updated image
     aiHint: "ai pipeline",
     tags: ["Python", "RAG", "LLM Evaluation", "NLP"],
     githubLink: "https://github.com/yogeshbawankar/project-rag",
@@ -19,10 +19,10 @@ const projectsData = [
   {
     title: "Hybrid Traffic Safety System",
     description: "Engineered a real-time Hybrid Traffic Safety System utilizing YOLO for object detection and Streamlit for an interactive user interface. This system enhances road safety by identifying potential hazards and automating alerts, demonstrating skills in computer vision and application development.",
-    image: "https://placehold.co/600x400.png",
+    image: "/hybrid-traffic-safety-system.png", // Updated image
     aiHint: "traffic safety yolo",
     tags: ["Streamlit", "Python", "YOLO", "Computer Vision", "Automation"],
-    githubLink: "https://github.com/yogeshbawankar/metadata-automation",
+    githubLink: "https://github.com/yogeshbawankar/metadata-automation", // This might need an update if it's not the correct repo
     liveLink: null,
   },
   {
@@ -31,17 +31,17 @@ const projectsData = [
     image: "https://placehold.co/600x400.png",
     aiHint: "nlp analysis",
     tags: ["NLTK", "TextBlob", "VADER", "spaCy", "Hugging Face Transformers", "Python"],
-    githubLink: "https://github.com/yogeshbawankar/vision-analysis",
+    githubLink: "https://github.com/yogeshbawankar/vision-analysis", // This might need an update
     liveLink: null,
   },
   {
     title: "Portfolio Website",
     description: "This very portfolio website, built with Next.js, React, Tailwind CSS, and ShadCN UI components to showcase my skills and projects.",
-    image: "/portfolio-image.png",
+    image: "/portfolio-image.png", // Updated image
     aiHint: "web development portfolio",
     tags: ["Next.js", "React", "TailwindCSS", "ShadCN UI"],
     githubLink: "https://github.com/yogeshbawankar/portfolio",
-    liveLink: "#",
+    liveLink: "#", // Links to the current page
   },
 ];
 
