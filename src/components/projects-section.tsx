@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"; // Ensured ShadCN Button is imported
 import { Github, ExternalLink } from "lucide-react";
 
 const projectsData = [
@@ -57,11 +57,11 @@ export default function ProjectsSection() {
             <Card key={index} className="bg-background text-foreground shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col overflow-hidden rounded-xl">
               <div className="relative w-full h-56 md:h-64">
                 <Image
-                  src={project.image}
+                  src={project.image || "https://placehold.co/600x400.png"}
                   alt={project.title}
                   fill
                   className="object-cover"
-                  data-ai-hint={project.aiHint}
+                  data-ai-hint={project.aiHint || "project image"}
                 />
               </div>
               <CardHeader>
@@ -84,6 +84,7 @@ export default function ProjectsSection() {
                   {project.githubLink && (
                     <Link href={project.githubLink} target="_blank" rel="noopener noreferrer" aria-label={`GitHub repository for ${project.title}`}>
                       <Button variant="outline" className="hover:bg-primary hover:text-primary-foreground transition-colors text-xs px-3 py-1 h-auto" suppressHydrationWarning>
+                        <Github className="h-3.5 w-3.5" /> 
                         {project.githubLink}
                       </Button>
                     </Link>
