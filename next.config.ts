@@ -1,24 +1,21 @@
 import type { NextConfig } from 'next';
 
-const isProd = process.env.NODE_ENV === 'production';
-
 const nextConfig: NextConfig = {
-  // ✅ Enable static export mode
-  output: 'export',
+  output: 'export', // ✅ Required for static hosting
 
-  // ✅ Base path setup for GitHub Pages (since your repo is `/studio`)
-  basePath: isProd ? '/studio' : '',
-  assetPrefix: isProd ? '/studio/' : '',
+  // ✅ Fix: Always use GitHub Pages path
+  basePath: '/studio',
+  assetPrefix: '/studio/assets/',
 
-  // ✅ Existing config retained
   typescript: {
     ignoreBuildErrors: true,
   },
   eslint: {
     ignoreDuringBuilds: true,
   },
+
   images: {
-    unoptimized: true, // ✅ Disable Image Optimization for static export
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
